@@ -77,6 +77,3 @@ typedef struct __fxdataplane_response
 } FxDataPlaneResponse;
 
 #endif
-//void FxTEDP__Init( char * ip, int port);
-//void FxTEDP__UpdatePacketInfo( uint8_t * sPtr, uint32_t flowId, uint32_t pktlen)
-//void FxTEDP__GetPacketInfo( uint8_t ** sPtr, uint32_t * upfTeid, uint32_t * ranTeid, uint32_t * upfip, uint32_t * flowId, uint32_t * gtpSeqNo, uint32_t * tcpSeqNo)
