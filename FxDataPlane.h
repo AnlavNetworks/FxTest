@@ -57,6 +57,7 @@ typedef struct __fxdataplane_request
 	uint32_t RANTeid;
 	uint32_t UPFIP;
 	uint32_t RANIP;
+	uint32_t UEIP;
 	uint32_t Action;
 	uint32_t NoOfPacketsToSend;
 	uint32_t Duration;
@@ -79,7 +80,7 @@ typedef struct __fxdataplane_response
 void FxTEDP__UpdatePacketInfo( uint8_t * sPtr, uint32_t flowId, uint32_t pktlen);
 void FxTEDP__GetPacketInfo( uint8_t ** sPtr, uint32_t * upfTeid, uint32_t * ranTeid, 
 	uint32_t * upfip, uint32_t * flowId, uint32_t * gtpSeqNo, uint32_t * tcpSeqNo, 
-	uint32_t * dstip, uint16_t * srcport, uint16_t * dstport, uint8_t * protocol);
+	uint32_t * srcip, uint32_t * dstip, uint16_t * srcport, uint16_t * dstport, uint8_t * protocol);
 void FxTEDP__Init( char * ip, int port);
 	
 #endif
