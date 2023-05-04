@@ -38,6 +38,9 @@
 #define FxTEDP__ACTION_SEND_GI_PROTOCOL_PACKET					3
 #define FxTEDP__ACTION_SEND_GTP_PROTOCOL_PACKET					4
 #define FxTEDP__ACTION_SEND_GTP_LOAD							5
+#define FxTEDP__ACTION_SEND_GTP_ICMP_PACKET						6
+#define FxTEDP__ACTION_STOP_PACKETS								7
+#define FxTEDP__ACTION_STOP_ALL_PACKETS							8
 
 typedef struct __fxdataplane_message_header
 {
