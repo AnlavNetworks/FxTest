@@ -81,10 +81,20 @@ typedef struct __fxdataplane_response
 } FxDataPlaneResponse;
 
 void FxTEDP__UpdatePacketInfo( uint8_t * sPtr, uint32_t flowId, uint32_t pktlen);
+
 void FxTEDP__GetPacketInfo( uint8_t ** sPtr, uint32_t * upfTeid, uint32_t * ranTeid, 
 	uint32_t * upfip, uint32_t * flowId, uint32_t * gtpSeqNo, uint32_t * tcpSeqNo, 
 	uint32_t * srcip, uint32_t * dstip, uint16_t * srcport, uint16_t * dstport, uint8_t * protocol);
-void FxTEDP__Init( char * ip, int port);
+
+void FxTEDP__UpdatePacketInfo2( uint8_t * sPtr, uint32_t flowId, uint32_t pktlen, uint32_t coreId);
+
+void FxTEDP__GetPacketInfo2( uint8_t ** sPtr, uint32_t * upfTeid, uint32_t * ranTeid, 
+	uint32_t * upfip, uint32_t * flowId, uint32_t * gtpSeqNo, uint32_t * tcpSeqNo, 
+	uint32_t * srcip, uint32_t * dstip, uint16_t * srcport, uint16_t * dstport, uint8_t * protocol, uint32_t coreId);
+
+
+void FxTEDP__Init( char * ip, int port, int coreCount);
+
 	
 #endif
 
