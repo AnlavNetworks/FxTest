@@ -5,3 +5,5 @@
 									"Enable" : 1,
 									"ValueType" : "System"
 								}
+
+"IMSIPrefixWithZERO" : 1
