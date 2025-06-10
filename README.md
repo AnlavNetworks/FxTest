@@ -1,4 +1,5 @@
 # Testing Solutions for 4G, 5G Core
+"IMSIPrefixWithZERO" : 1
 
 ----
 
